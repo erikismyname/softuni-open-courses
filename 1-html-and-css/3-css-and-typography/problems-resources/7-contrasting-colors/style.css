@@ -1,0 +1,14 @@
+body {
+    font: 16px/1.5 Helvetica, sans-serif;
+}
+
+article {
+    background-color: rgb(51, 102, 153);
+    color: white;
+    border-radius: 1em;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+}
