@@ -1,0 +1,25 @@
+body {
+    font-family: Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: lime;
+}
