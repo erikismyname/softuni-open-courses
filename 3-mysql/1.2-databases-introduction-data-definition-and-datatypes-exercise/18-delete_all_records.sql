@@ -1,1 +1,1 @@
-TRUNCATE tabe `occupancies`;
+TRUNCATE table `occupancies`;
