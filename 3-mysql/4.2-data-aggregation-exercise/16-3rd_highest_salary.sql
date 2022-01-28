@@ -1,6 +1,6 @@
 SELECT
 `department_id`,
-(SELECT
+(SELECT DISTINCT
 `salary`
 FROM
 `employees` AS `e2`
