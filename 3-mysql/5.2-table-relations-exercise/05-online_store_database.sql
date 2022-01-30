@@ -44,6 +44,6 @@ REFERENCES `orders`(`order_id`),
 CONSTRAINT `fk_order_items_items`
 FOREIGN KEY (`item_id`)
 REFERENCES `items`(`item_id`),
-CONSTRAINT `pk_order_items`
+CONSTRAINT `pk_order_item`
 PRIMARY KEY (`order_id`, `item_id`)
 );
