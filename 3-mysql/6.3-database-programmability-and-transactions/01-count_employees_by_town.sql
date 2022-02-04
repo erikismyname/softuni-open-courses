@@ -14,4 +14,4 @@ JOIN `towns` AS `t`
 ON `a`.`town_id` = `t`.`town_id` 
 WHERE `t`.`name` = `town_name`);
 RETURN `e_count`;
-END
+END//
