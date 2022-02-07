@@ -9,11 +9,8 @@ BEGIN
     SET `balance` = `balance` + `money_amount`
     WHERE `id` = `account_id`;
     END IF;
-    SELECT `id`, `account_holder_id`, `balance` 
-    FROM `accounts`
-    WHERE `id` = `account_id`;
 END$$
 
 DELIMITER ;
 
-CALL `usp_deposit_money`(1, -10);
+CALL `usp_deposit_money`(1, 10);
