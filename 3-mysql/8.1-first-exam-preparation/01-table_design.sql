@@ -75,6 +75,12 @@ CREATE TABLE `players` (
 
 CREATE TABLE `players_coaches` (
 	`player_id` INT,
+    CONSTRAINT `fk_players_coaches_players`
+    FOREIGN KEY (`player_id`)
+    REFERENCES `players` (`id`),
     `coach_id` INT,
+    CONSTRAINT `fk_players_coaches_coaches`
+    FOREIGN KEY (`coach_id`)
+    REFERENCES `coaches` (`id`),
     PRIMARY KEY (`player_id`, `coach_id`)
 );
