@@ -1,4 +1,6 @@
 UPDATE `coaches`
 SET `coach_level` = `coach_level` + 1
 WHERE `first_name` LIKE 'A%'
-AND (SELECT COUNT(*) FROM `players_coaches` WHERE `coach_id`) > 0; 
+AND `id` IN (
+	SELECT `coach_id` FROM `players_coaches`
+);
