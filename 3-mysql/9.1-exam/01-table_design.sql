@@ -46,7 +46,7 @@ CREATE TABLE `customers` (
     `last_name` VARCHAR(20) NOT NULL,
     `phone` VARCHAR(30) NOT NULL UNIQUE,
     `address` VARCHAR(60) NOT NULL,
-    `discount_card` BOOLEAN NOT NULL DEFAULT 0
+    `discount_card` BIT NOT NULL DEFAULT 0
 );
 
 CREATE TABLE `orders` (
